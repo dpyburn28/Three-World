@@ -1,0 +1,65 @@
+{
+    "scene": {
+        "camera": {
+            "height": 0,
+            "distance": 457
+        }
+    },
+    "objects": {
+        "Eye": {
+            "shader": {
+                "u_eyeRadius": 120,
+                "u_scleraColor": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255
+                },
+                "u_irisInnerColor": {
+                    "r": 102,
+                    "g": 51,
+                    "b": 179
+                },
+                "u_irisOuterColor": {
+                    "r": 51,
+                    "g": 77,
+                    "b": 153
+                },
+                "u_pupilColor": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0
+                },
+                "u_eyelidColor": {
+                    "r": 219,
+                    "g": 173,
+                    "b": 173
+                },
+                "u_irisCryptColor": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0
+                },
+                "u_pupilRadius": 0.1,
+                "u_irisRadius": 0.28,
+                "u_scleraSqueeze": 0,
+                "u_pupilSqueeze": 0,
+                "u_blink": 0.25,
+                "u_eyelidBias": 0,
+                "u_scleraAngle": 0,
+                "u_irisAngle": 0,
+                "u_pupilAngle": 0,
+                "u_eyelidAngle": 0,
+                "u_soften": 0.01,
+                "u_fiberFreq": 35,
+                "u_limbalWidth": 0.06,
+                "u_irisRadialComp": 3,
+                "u_irisCryptFreq": 8
+            },
+            "anim": {
+                "animateBlink": true,
+                "animatePupil": true
+            }
+        }
+    },
+    "postEffects": {}
+}

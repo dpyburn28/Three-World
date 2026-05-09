@@ -1,0 +1,32 @@
+{
+    "u_baseColor":           { "label": "Base Color",       "type": "color", "value": { "r": 245, "g": 240, "b": 232 } },
+    "u_tipColor":            { "label": "Tip Color",        "type": "color", "value": { "r": 200, "g": 190, "b": 175 } },
+    "u_tipBlend":            { "label": "Tip Blend",        "value": 0.3,    "min": 0.0,  "max": 1.0,   "step": 0.01 },
+    "u_shaftColor":          { "label": "Shaft Color",      "type": "color", "value": { "r": 220, "g": 200, "b": 160 } },
+
+    "u_barbDensity":         { "label": "Barb Density",     "value": 120.0,  "min": 10.0, "max": 400.0, "step": 1.0 },
+    "u_barbStrength":        { "label": "Barb Strength",    "value": 0.15,   "min": 0.0,  "max": 0.5,   "step": 0.01 },
+    "u_barbSlant":           { "label": "Barb Slant",       "value": 0.3,    "min": 0.0,  "max": 1.0,   "step": 0.01 },
+    "u_barbGap":             { "label": "Barb Gap",         "value": 0.0,    "min": 0.0,  "max": 1.0,   "step": 0.01 },
+
+    "u_iridescentStrength":  { "label": "Iridescence",      "value": 0.0,    "min": 0.0,  "max": 1.0,   "step": 0.01 },
+    "u_iridescentHue":       { "label": "Iridescent Hue",   "value": 0.55,   "min": 0.0,  "max": 1.0,   "step": 0.01 },
+    "u_iridescentSpread":    { "label": "Iridescent Spread", "value": 0.3,   "min": 0.0,  "max": 1.0,   "step": 0.01 },
+
+    "u_translucentStrength": { "label": "Translucency",     "value": 0.25,   "min": 0.0,  "max": 1.0,   "step": 0.01 },
+    "u_translucentColor":    { "label": "Translucent Color", "type": "color", "value": { "r": 255, "g": 200, "b": 120 } },
+
+    "u_lightDir":            { "label": "Light Dir",        "type": "vec3",  "value": { "x": 0.5, "y": 0.7, "z": 0.5 } },
+    "u_lightColor":          { "label": "Light Color",      "type": "color", "value": { "r": 255, "g": 248, "b": 235 } },
+    "u_ambientStrength":     { "label": "Ambient",          "value": 0.2,    "min": 0.0,  "max": 1.0,   "step": 0.01 },
+    "u_specularPow":         { "label": "Specular Power",   "value": 32.0,   "min": 1.0,  "max": 128.0, "step": 1.0 },
+    "u_specularStrength":    { "label": "Specular",         "value": 0.4,    "min": 0.0,  "max": 1.0,   "step": 0.01 },
+    "u_shaftGloss":          { "label": "Shaft Gloss",      "value": 2.0,    "min": 0.0,  "max": 5.0,   "step": 0.1 },
+
+    "u_edgeFade":            { "label": "Edge Fade",        "value": 0.05,   "min": 0.0,  "max": 0.3,   "step": 0.005 },
+
+    "u_windReactivity":      { "label": "Wind Reactivity",  "value": 0.5,    "min": 0.0,  "max": 2.0,   "step": 0.01 },
+    "u_flutterStrength":     { "label": "Flutter Strength",  "value": 0.3,   "min": 0.0,  "max": 1.0,   "step": 0.01 },
+    "u_stiffness":           { "label": "Shaft Stiffness",  "value": 0.6,    "min": 0.0,  "max": 1.0,   "step": 0.01 },
+    "u_barbFlex":            { "label": "Barb Flex",        "value": 0.5,    "min": 0.0,  "max": 2.0,   "step": 0.01 }
+}

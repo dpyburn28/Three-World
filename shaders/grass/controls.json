@@ -1,0 +1,22 @@
+{
+    "u_bladeHeight": {
+        "label": "Blade Height",
+        "value": 80.0,
+        "min": 10, "max": 200, "step": 1
+    },
+    "u_fieldSize": {
+        "label": "Field Size",
+        "value": 600.0,
+        "min": 100, "max": 2000, "step": 10
+    },
+    "u_pftResolution": {
+        "label": "PFT Resolution",
+        "value": 256.0,
+        "min": 64, "max": 512, "step": 64
+    },
+    "u_influenceMult": {
+        "label": "Influence Mult",
+        "value": 1.8,
+        "min": 0.5, "max": 4.0, "step": 0.05
+    }
+}

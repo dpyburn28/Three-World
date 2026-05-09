@@ -1,0 +1,113 @@
+{
+    "scene": {
+        "camera": {
+            "height": 0,
+            "distance": 457
+        }
+    },
+    "objects": {
+        "Eye": {
+            "shader": {
+                "u_eyeRadius": 120,
+                "u_scleraColor": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255
+                },
+                "u_irisInnerColor": {
+                    "r": 102,
+                    "g": 51,
+                    "b": 179
+                },
+                "u_irisOuterColor": {
+                    "r": 51,
+                    "g": 77,
+                    "b": 153
+                },
+                "u_pupilColor": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0
+                },
+                "u_eyelidColor": {
+                    "r": 219,
+                    "g": 173,
+                    "b": 173
+                },
+                "u_irisCryptColor": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0
+                },
+                "u_pupilRadius": 0.1,
+                "u_irisRadius": 0.28,
+                "u_scleraSqueeze": 0,
+                "u_pupilSqueeze": 0,
+                "u_blink": 0.25,
+                "u_eyelidBias": 0,
+                "u_scleraAngle": 0,
+                "u_irisAngle": 0,
+                "u_pupilAngle": 0,
+                "u_eyelidAngle": 0,
+                "u_soften": 0.01,
+                "u_fiberFreq": 35,
+                "u_limbalWidth": 0.06,
+                "u_irisRadialComp": 3,
+                "u_irisCryptFreq": 8
+            },
+            "anim": {
+                "animateBlink": true,
+                "animatePupil": true
+            }
+        },
+        "Water Caustics": {
+            "shader": {
+                "u_timeSpeed": 0.26999999999999996,
+                "u_focalLength": 2.8699999999999997,
+                "u_worldScale": 1.5,
+                "u_warpStrength": 0.255,
+                "u_warpIterations": 2,
+                "u_contrastScale": 3,
+                "u_contrastBias": 1.5,
+                "u_color": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255
+                }
+            },
+            "vec3": {
+                "cameraDir": {
+                    "x": 0,
+                    "y": -1,
+                    "z": -1
+                },
+                "worldOffset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        }
+    },
+    "postEffects": {
+        "Dither": {
+            "enabled": true,
+            "shader": {
+                "u_ditherScale": 3,
+                "u_ditherStrength": 1
+            }
+        },
+        "Datamosh": {
+            "enabled": true,
+            "shader": {
+                "u_thresholdMax": 0.66,
+                "u_thresholdRamp": 2.77,
+                "u_spawnRate": 0.37999999999999995,
+                "u_spawnScale": 32,
+                "u_spawnSpeed": 10,
+                "u_spawnSeed": 42,
+                "u_deltaScale": 0.18499999999999997
+            }
+        }
+    }
+}

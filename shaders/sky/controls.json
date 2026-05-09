@@ -1,0 +1,68 @@
+{
+    "u_topColor": {
+        "label": "Top Color",
+        "type": "color",
+        "value": { "r": 26, "g": 102, "b": 230 }
+    },
+    "u_bottomColor": {
+        "label": "Horizon Color",
+        "type": "color",
+        "value": { "r": 230, "g": 179, "b": 128 }
+    },
+    "u_cloudSpeed": {
+        "label": "Cloud Speed",
+        "value": 0.05,
+        "min": 0.0,
+        "max": 0.5,
+        "step": 0.001
+    },
+    "u_cloudScale": {
+        "label": "Cloud Scale",
+        "value": 2.0,
+        "min": 0.1,
+        "max": 8.0,
+        "step": 0.1
+    },
+    "u_cloudDensity": {
+        "label": "Cloud Density",
+        "value": 0.4,
+        "min": 0.0,
+        "max": 1.0,
+        "step": 0.01
+    },
+    "u_cloudSoftness": {
+        "label": "Cloud Softness",
+        "value": 0.5,
+        "min": 0.01,
+        "max": 1.0,
+        "step": 0.01
+    },
+    "u_cloudBrightness": {
+        "label": "Cloud Brightness",
+        "value": 1.0,
+        "min": 0.5,
+        "max": 1.0,
+        "step": 0.01
+    },
+    "u_horizonFade": {
+        "label": "Horizon Fade",
+        "value": 0.15,
+        "min": 0.01,
+        "max": 0.5,
+        "step": 0.01
+    },
+    "u_horizonOffset": {
+        "label": "Horizon",
+        "value": 0.0,
+        "min": -1.0,
+        "max": 1.0,
+        "step": 0.01
+    },
+    "u_cloudHeight": {
+        "label": "Cloud Coverage",
+        "value": 0.0,
+        "min": -1.0,
+        "max": 1.0,
+        "step": 0.01
+    }
+}

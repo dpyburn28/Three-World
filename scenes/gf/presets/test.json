@@ -1,0 +1,44 @@
+{
+    "scene": {
+        "camera": {
+            "height": 239,
+            "distance": 686
+        }
+    },
+    "objects": {
+        "Sky": {
+            "shader": {
+                "u_topColor": {
+                    "r": 26,
+                    "g": 102,
+                    "b": 230
+                },
+                "u_bottomColor": {
+                    "r": 230,
+                    "g": 179,
+                    "b": 128
+                },
+                "u_cloudSpeed": 0.05,
+                "u_cloudScale": 5,
+                "u_cloudDensity": 0.34,
+                "u_cloudSoftness": 0.01,
+                "u_cloudBrightness": 1,
+                "u_horizonFade": 0.15,
+                "u_horizonOffset": 0,
+                "u_cloudHeight": -1
+            }
+        },
+        "Grass Field": {
+            "shader": {
+                "u_bladeHeight": 163,
+                "u_windStr": 29.599999999999998,
+                "u_fieldSize": 410
+            },
+            "geo": {
+                "bladeCols": 100,
+                "bladeRows": 100,
+                "segments": 5
+            }
+        }
+    }
+}

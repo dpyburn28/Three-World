@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Renders / video output
+renders/
+*.mp4
+
+# Model files
+models/
+
+# Stray screenshots
+css/*.jpg
+css/*.png

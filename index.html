@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shaders</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/Pass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/lines/LineSegmentsGeometry.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/lines/LineMaterial.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/lines/LineSegments2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+    <!-- CCapture (frame-perfect video capture) -->
+    <script src="https://unpkg.com/ccapture.js@1.1.0/build/CCapture.all.min.js"></script>
+
+    <!-- Tweakpane -->
+    <script type="module">
+        import { Pane } from 'https://cdn.jsdelivr.net/npm/tweakpane@4.0.5/dist/tweakpane.min.js';
+        import * as EssentialsPlugin from 'https://cdn.jsdelivr.net/npm/@tweakpane/plugin-essentials@0.2.0/dist/tweakpane-plugin-essentials.min.js';
+        import * as CameraKitPlugin from 'https://cdn.jsdelivr.net/npm/@tweakpane/plugin-camerakit@0.3.0/dist/tweakpane-plugin-camerakit.min.js';
+        window.Pane = Pane;
+        window.EssentialsPlugin = EssentialsPlugin;  // ← expose it
+        window.CameraKitPlugin = CameraKitPlugin
+    </script>
+
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/shaderLoader.js"></script>
+    <script src="js/ShaderControls.js"></script>
+    <script src="js/SceneManager.js"></script>
+    <script src="js/PingPongPass.js"></script>
+    <script src="js/PresetManager.js"></script>
+    <script src="js/ScenePresetManager.js"></script>
+    <script src="js/PresetHandler.js"></script>
+    <script src="js/SceneObject.js"></script>
+    <script src="js/SceneEntities.js"></script>
+    <script src="js/ShaderHandle.js"></script>
+    <script src="js/PostProcessEffect.js"></script>
+    <script src="js/MidiController.js"></script>
+    <script src="js/AudioDriver.js"></script>
+    <script src="js/AudioRecorder.js"></script>
+
+    <!-- Effects -->
+    <script src="effects/dither.js"></script>
+    <script src="effects/datamosh.js"></script>
+    <!-- GLTFLoader -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <!-- Objects -->
+    <script src="objects/grassField.js"></script>
+    <script src="objects/skyDome.js"></script>
+    <script src="objects/eye.js"></script>
+    <script src="objects/water.js"></script>
+    <script src="objects/Sun.js"></script>
+    <script src="objects/DesertSky.js"></script>
+    <!-- <script src="objects/WindVisualizer.js"></script> -->
+    <script src="objects/DuneTerrain.js"></script>
+    <script src="objects/SandParticles.js"></script>
+    <script src="objects/AudioVisualizer.js"></script>
+    <script src="objects/Feather/Feather.js"></script>
+    <script src="objects/Astronaught/Astronaught.js"></script>
+
+    <!-- Systems -->
+    <script src="systems/SystemHandle.js"></script>
+    <script src="systems/Camera.js"></script>
+    <script src="systems/Wind.js"></script>
+    <script src="systems/WindVis.js"></script>
+    <script src="systems/Midi.js"></script>
+    <script src="systems/Physics.js"></script>
+
+    <!-- Scenes -->
+    <script src="scenes/astronaught/astronaught.js"></script>
+
+</head>
+<body>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

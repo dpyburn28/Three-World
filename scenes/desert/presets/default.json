@@ -1,0 +1,290 @@
+{
+    "scene": {
+        "camera": {
+            "height": 150,
+            "distance": 500,
+            "fov": 75
+        },
+        "wind": {
+            "direction": 60,
+            "speed": 2.2,
+            "strength": 16,
+            "waveFreq": 0.019000000000000003,
+            "waveHarmonics": true,
+            "boundaryLayer": true,
+            "roughnessLength": 0.001,
+            "referenceHeight": 150,
+            "gustStrength": 26,
+            "gustSpeed": 4,
+            "gustScale": 0.004,
+            "gustSharpness": 2.5,
+            "gustTemporality": 0.4,
+            "shear": true,
+            "shearAngle": 20,
+            "shearHeight": 120,
+            "turbulence": 5,
+            "turbOctaves": 4,
+            "turbLacunarity": 2.1,
+            "turbGain": 0.55,
+            "turbBaseFreq": 0.005,
+            "turbTimeScale": 1,
+            "turbWindCoupling": 0.7,
+            "verticalStrength": 0.08
+        },
+        "sun": {
+            "angles": {
+                "azimuth": -101.96375653207352,
+                "elevation": 22.809479553739912
+            },
+            "color": {
+                "r": 1,
+                "g": 0.95,
+                "b": 0.75
+            },
+            "intensity": 1.27,
+            "sunSize": 0.03,
+            "sunBloom": 0.4,
+            "distance": 8500,
+            "meshRadius": 120,
+            "meshVisible": true,
+            "hideMeshBelowHorizon": true
+        }
+    },
+    "objects": {
+        "Sun": {
+            "angles": {
+                "azimuth": -101.96375653207352,
+                "elevation": 22.809479553739912
+            },
+            "color": {
+                "r": 1,
+                "g": 0.95,
+                "b": 0.75
+            },
+            "intensity": 1.27,
+            "sunSize": 0.03,
+            "sunBloom": 0.4,
+            "distance": 8500,
+            "meshRadius": 120,
+            "meshVisible": true,
+            "hideMeshBelowHorizon": true
+        },
+        "Desert Sky": {
+            "shader": {
+                "u_zenithColor": {
+                    "r": 28,
+                    "g": 85,
+                    "b": 200
+                },
+                "u_horizonColor": {
+                    "r": 200,
+                    "g": 155,
+                    "b": 90
+                },
+                "u_groundColor": {
+                    "r": 180,
+                    "g": 130,
+                    "b": 70
+                },
+                "u_horizonSharpness": 1.8,
+                "u_horizonOffset": 0.05,
+                "u_hazeColor": {
+                    "r": 230,
+                    "g": 185,
+                    "b": 120
+                },
+                "u_hazeStrength": 0.6,
+                "u_cloudSpeed": 0.03,
+                "u_cloudScale": 1.5,
+                "u_cloudDensity": 0.65,
+                "u_cloudSoftness": 0.35,
+                "u_cloudBrightness": 1,
+                "u_cloudHeight": 0.1,
+                "u_cloudColor": {
+                    "r": 255,
+                    "g": 248,
+                    "b": 230
+                },
+                "u_cloudShadowColor": {
+                    "r": 160,
+                    "g": 140,
+                    "b": 110
+                },
+                "u_starDensity": 50,
+                "u_starBrightness": 1,
+                "u_starSize": 1,
+                "u_nightBlend": 0
+            }
+        },
+        "Dune Terrain": {
+            "shader": {
+                "u_rippleFreq": 0.023,
+                "u_rippleStrength": 0.11,
+                "u_rippleSpeed": 60,
+                "u_grainScale": 0.2,
+                "u_grainStrength": 0.35000000000000003,
+                "u_grainShift": 2,
+                "u_ambientStrength": 0,
+                "u_specularPow": 26,
+                "u_specularStrength": 1.3877787807814457e-17,
+                "u_sandBase": {
+                    "r": 210,
+                    "g": 165,
+                    "b": 90
+                },
+                "u_sandDark": {
+                    "r": 160,
+                    "g": 110,
+                    "b": 55
+                },
+                "u_sandLight": {
+                    "r": 240,
+                    "g": 210,
+                    "b": 160
+                }
+            },
+            "terrain": {
+                "duneHeight": 80,
+                "duneSpacing": 180,
+                "stossLength": 0.68,
+                "interduneFrac": 0.25,
+                "crestSharpness": 2.5,
+                "crestWander": 0.35,
+                "crestWanderScale": 0.004,
+                "envelopeScale": 0.002,
+                "envelopeContrast": 0.7,
+                "compoundAmp": 0.18,
+                "compoundRatio": 0.28,
+                "rippleFreq": 0.08,
+                "rippleStrength": 0.08,
+                "ambientStrength": 0.3,
+                "specularPow": 32,
+                "specularStrength": 0.4
+            },
+            "size": {
+                "terrainSize": 1200,
+                "meshRes": 256,
+                "hmRes": 512
+            }
+        },
+        "Sand Particles": {
+            "physics": {
+                "numSaltation": 3000,
+                "numCreep": 2000,
+                "numAvalanche": 500,
+                "launchAngle": 15,
+                "launchSpeed": 35,
+                "launchSpread": 0.2,
+                "launchThreshold": 6,
+                "gravity": 180,
+                "airDrag": 1.5,
+                "restitution": 0.15,
+                "maxHopHeight": 25,
+                "creepSpeed": 0.06,
+                "creepThreshold": 3,
+                "angleOfRepose": 34,
+                "avalancheSpeed": 15,
+                "grainSize": 2.5,
+                "opacity": 0.7
+            },
+            "shader": {
+                "u_grainSize": 2.5,
+                "u_grainSoftness": 0.25,
+                "u_opacity": 0.7,
+                "u_fogDensity": 0.6,
+                "u_colorGround": {
+                    "r": 185,
+                    "g": 138,
+                    "b": 65
+                },
+                "u_colorAir": {
+                    "r": 225,
+                    "g": 195,
+                    "b": 130
+                },
+                "u_fogColor": {
+                    "r": 196,
+                    "g": 154,
+                    "b": 74
+                }
+            }
+        },
+        "Wind Visualizer": {
+            "numParticles": 200,
+            "trailLength": 30,
+            "speedBase": 40,
+            "speedResponse": 0.7,
+            "speedNormRef": 30,
+            "minHeight": 5,
+            "maxHeight": 150,
+            "numSides": 8,
+            "lineWidth": 1.5,
+            "opacity": 1.3877787807814457e-17,
+            "tailOpacity": 0,
+            "colorMode": "speed",
+            "slowColor": {
+                "r": 50,
+                "g": 100,
+                "b": 255
+            },
+            "fastColor": {
+                "r": 255,
+                "g": 80,
+                "b": 20
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            },
+            "vf": {
+                "enabled": false,
+                "gridRes": 20,
+                "heightLevels": 3,
+                "arrowScale": 1,
+                "normalizeLen": true,
+                "headSize": 0.25,
+                "lineWidth": 1.5,
+                "colorMode": "speed",
+                "slowColor": {
+                    "r": 50,
+                    "g": 100,
+                    "b": 255
+                },
+                "fastColor": {
+                    "r": 255,
+                    "g": 80,
+                    "b": 20
+                },
+                "color": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255
+                },
+                "opacity": 0.5
+            }
+        }
+    },
+    "postEffects": {
+        "Dither": {
+            "enabled": true,
+            "shader": {
+                "u_ditherScale": 3,
+                "u_ditherStrength": 1.3,
+                "u_keepColor": 0
+            }
+        },
+        "Datamosh": {
+            "enabled": true,
+            "shader": {
+                "u_thresholdMax": 0.51,
+                "u_thresholdRamp": 0.5,
+                "u_spawnRate": 0.43499999999999994,
+                "u_spawnScale": 27.5,
+                "u_spawnSpeed": 10,
+                "u_spawnSeed": 42,
+                "u_deltaScale": 0
+            }
+        }
+    }
+}

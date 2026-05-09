@@ -1,0 +1,12 @@
+{
+    "u_topColor":         { "r": 15,  "g": 10,  "b": 60  },
+    "u_bottomColor":      { "r": 255, "g": 90,  "b": 30  },
+    "u_cloudSpeed":       0.03,
+    "u_cloudScale":       1.8,
+    "u_cloudDensity":     0.3,
+    "u_cloudSoftness":    0.3,
+    "u_cloudBrightness":  0.95,
+    "u_cloudHeight":      -0.1,
+    "u_horizonFade":      0.12,
+    "u_horizonOffset":    0.0
+}

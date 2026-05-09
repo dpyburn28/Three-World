@@ -1,0 +1,24 @@
+{
+    "camera": {
+        "posX": 80,
+        "posY": 60,
+        "posZ": 150,
+        "lookX": 0,
+        "lookY": 30,
+        "lookZ": 0,
+        "fov": 50,
+        "near": 0.1,
+        "far": 5000
+    },
+    "layout": {
+        "gridRows": 2,
+        "gridCols": 2,
+        "blockWidth": 60,
+        "blockDepth": 80,
+        "roadWidth": 12,
+        "sidewalkWidth": 4,
+        "curbHeight": 0.15,
+        "curbWidth": 0.15,
+        "cornerRadius": 3
+    }
+}

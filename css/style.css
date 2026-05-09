@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+canvas {
+    overflow: hidden;
+}
+
+.lil-gui { 
+	--width: 200px;
+	--name-width: 20%;
+    /* --background-color: #000; */
+	/* --widget-color: #0af; */
+	/* --padding: 2px; */
+    --font-size: 10px;
+}
+
+/* Make Tweakpane scrollable */
+.tp-dfwv {
+    max-height: 100vh;
+    overflow-y: auto !important;
+}
+
+.tp-rotv {
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.tp-rotv_c {
+    overflow-y: auto !important;
+    flex: 1 1 auto;
+    min-height: 0;
+}

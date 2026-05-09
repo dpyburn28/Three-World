@@ -1,0 +1,33 @@
+{
+    "length": 0.8,
+    "maxWidth": 0.6,
+    "widestPoint": 0.45,
+    "tipRoundness": 0.9,
+    "calamusLength": 0.02,
+    "asymmetry": 0.0,
+    "curve": 0.05,
+    "droop": 0.08,
+    "twist": 0.0,
+    "shaftRise": 0.05,
+    "shaftWidth": 0.1,
+    "shaftSharpness": 2.0,
+    "barbAngle": 0.1,
+    "shader": {
+        "u_baseColor": { "r": 255, "g": 250, "b": 240 },
+        "u_tipColor": { "r": 240, "g": 235, "b": 225 },
+        "u_tipBlend": 0.1,
+        "u_shaftColor": { "r": 230, "g": 215, "b": 190 },
+        "u_shaftWidth": 0.08,
+        "u_barbDensity": 60,
+        "u_barbStrength": 0.08,
+        "u_barbSlant": 0.15,
+        "u_iridescentStrength": 0.0,
+        "u_translucentStrength": 0.4,
+        "u_translucentColor": { "r": 255, "g": 230, "b": 180 },
+        "u_ambientStrength": 0.3,
+        "u_specularPow": 16,
+        "u_specularStrength": 0.2,
+        "u_shaftGloss": 1.0,
+        "u_edgeFade": 0.15
+    }
+}

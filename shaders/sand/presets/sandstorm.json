@@ -1,0 +1,9 @@
+{
+    "u_grainSize": 7.5,
+    "u_grainSoftness": 0.45,
+    "u_opacity": 0.95,
+    "u_fogDensity": 2.8,
+    "u_colorGround": { "r": 120, "g": 78,  "b": 22 },
+    "u_colorAir":    { "r": 175, "g": 130, "b": 55 },
+    "u_fogColor":    { "r": 140, "g": 95,  "b": 30 }
+}

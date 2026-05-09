@@ -1,0 +1,37 @@
+{
+    "u_grainSize": {
+        "label": "Grain Size",
+        "value": 2.5,
+        "min": 0.5, "max": 8.0, "step": 0.1
+    },
+    "u_grainSoftness": {
+        "label": "Grain Softness",
+        "value": 0.25,
+        "min": 0.0, "max": 0.5, "step": 0.01
+    },
+    "u_opacity": {
+        "label": "Opacity",
+        "value": 0.7,
+        "min": 0.0, "max": 1.0, "step": 0.01
+    },
+    "u_fogDensity": {
+        "label": "Fog Density",
+        "value": 0.6,
+        "min": 0.0, "max": 3.0, "step": 0.05
+    },
+    "u_colorGround": {
+        "label": "Ground Color",
+        "type": "color",
+        "value": { "r": 185, "g": 138, "b": 65 }
+    },
+    "u_colorAir": {
+        "label": "Air Color",
+        "type": "color",
+        "value": { "r": 225, "g": 195, "b": 130 }
+    },
+    "u_fogColor": {
+        "label": "Fog Color",
+        "type": "color",
+        "value": { "r": 196, "g": 154, "b": 74 }
+    }
+}

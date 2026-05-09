@@ -1,0 +1,49 @@
+{
+    "scene": {
+        "camera": { "height": 120, "distance": 300 }
+    },
+    "objects": {
+        "Sky": {
+            "shader": {
+                "u_topColor":        { "r": 26,  "g": 102, "b": 230 },
+                "u_bottomColor":     { "r": 230, "g": 179, "b": 128 },
+                "u_cloudSpeed":      0.05,
+                "u_cloudScale":      2.0,
+                "u_cloudDensity":    0.4,
+                "u_cloudSoftness":   0.5,
+                "u_cloudBrightness": 1.0,
+                "u_cloudHeight":     0.0,
+                "u_horizonFade":     0.15,
+                "u_horizonOffset":   0.0
+            }
+        },
+        "Grass Field": {
+            "shader": {
+                "u_bladeHeight":   80.0,
+                "u_windStr":       12.0,
+                "u_fieldSize":     600.0,
+                "u_influenceMult": 1.8
+            },
+            "geo": { "bladeCols": 100, "bladeRows": 100, "segments": 5 }
+        }
+    },
+    "postEffects": {
+        "Dither": {
+            "enabled": false,
+            "shader": {
+                "uColorLevels": 4
+            }
+        },
+        "Datamosh": {
+            "enabled": true,
+            "shader": {
+                "u_thresholdMax": 0.51,
+                "u_thresholdRamp": 1.09,
+                "u_spawnRate": 0.37999999999999995,
+                "u_spawnScale": 32,
+                "u_spawnSpeed": 10,
+                "u_spawnSeed": 10.899999999999999
+            }
+        }
+    }
+}

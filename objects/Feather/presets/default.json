@@ -1,0 +1,65 @@
+{
+    "length": 2.02,
+    "maxWidth": 0.15000000000000002,
+    "widestPoint": 0.30999999999999994,
+    "tipRoundness": 1,
+    "calamusLength": 0.15,
+    "asymmetry": -8.673617379884035e-18,
+    "curve": 6.938893903907228e-18,
+    "droop": 0.02,
+    "twist": 31,
+    "shaftRise": 0.012,
+    "shaftWidth": 0.09,
+    "shaftSharpness": 8,
+    "barbAngle": 0.61,
+    "shader": {
+        "u_baseColor": {
+            "r": 245,
+            "g": 240,
+            "b": 232
+        },
+        "u_tipColor": {
+            "r": 200,
+            "g": 190,
+            "b": 175
+        },
+        "u_tipBlend": 0.86,
+        "u_shaftColor": {
+            "r": 220,
+            "g": 200,
+            "b": 160
+        },
+        "u_barbDensity": 108,
+        "u_barbStrength": 0.5,
+        "u_barbSlant": 0.3,
+        "u_barbGap": 1,
+        "u_iridescentStrength": 0,
+        "u_iridescentHue": 0.55,
+        "u_iridescentSpread": 0.3,
+        "u_translucentStrength": 0.21999999999999997,
+        "u_translucentColor": {
+            "r": 255,
+            "g": 200,
+            "b": 120
+        },
+        "u_lightDir": {
+            "x": 0.5,
+            "y": 0.7,
+            "z": 0.5
+        },
+        "u_lightColor": {
+            "r": 255,
+            "g": 248,
+            "b": 235
+        },
+        "u_ambientStrength": 0.2,
+        "u_specularPow": 40,
+        "u_specularStrength": 0.32,
+        "u_shaftGloss": 1.7,
+        "u_edgeFade": 0.21,
+        "u_windReactivity": 0.7000000000000001,
+        "u_flutterStrength": 1,
+        "u_stiffness": 0,
+        "u_barbFlex": 1.85
+    }
+}

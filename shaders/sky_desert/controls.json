@@ -1,0 +1,97 @@
+{
+    "u_zenithColor": {
+        "label": "Zenith",
+        "type": "color",
+        "value": { "r": 28, "g": 85, "b": 200 }
+    },
+    "u_horizonColor": {
+        "label": "Horizon",
+        "type": "color",
+        "value": { "r": 200, "g": 155, "b": 90 }
+    },
+    "u_groundColor": {
+        "label": "Ground Haze",
+        "type": "color",
+        "value": { "r": 180, "g": 130, "b": 70 }
+    },
+    "u_horizonSharpness": {
+        "label": "Horizon Sharpness",
+        "value": 1.8,
+        "min": 0.5, "max": 4.0, "step": 0.05
+    },
+    "u_horizonOffset": {
+        "label": "Horizon Offset",
+        "value": 0.05,
+        "min": -0.5, "max": 0.5, "step": 0.01
+    },
+    "u_hazeColor": {
+        "label": "Haze Color",
+        "type": "color",
+        "value": { "r": 230, "g": 185, "b": 120 }
+    },
+    "u_hazeStrength": {
+        "label": "Haze Strength",
+        "value": 0.6,
+        "min": 0.0, "max": 2.0, "step": 0.01
+    },
+    "u_cloudSpeed": {
+        "label": "Cloud Speed",
+        "value": 0.03,
+        "min": 0.0, "max": 0.3, "step": 0.001
+    },
+    "u_cloudScale": {
+        "label": "Cloud Scale",
+        "value": 1.5,
+        "min": 0.1, "max": 8.0, "step": 0.1
+    },
+    "u_cloudDensity": {
+        "label": "Cloud Density",
+        "value": 0.65,
+        "min": 0.0, "max": 1.0, "step": 0.01
+    },
+    "u_cloudSoftness": {
+        "label": "Cloud Softness",
+        "value": 0.35,
+        "min": 0.01, "max": 1.0, "step": 0.01
+    },
+    "u_cloudBrightness": {
+        "label": "Cloud Brightness",
+        "value": 1.0,
+        "min": 0.3, "max": 1.5, "step": 0.01
+    },
+    "u_cloudHeight": {
+        "label": "Cloud Height",
+        "value": 0.1,
+        "min": -1.0, "max": 0.8, "step": 0.01
+    },
+    "u_cloudColor": {
+        "label": "Cloud Color",
+        "type": "color",
+        "value": { "r": 255, "g": 248, "b": 230 }
+    },
+    "u_cloudShadowColor": {
+        "label": "Cloud Shadow",
+        "type": "color",
+        "value": { "r": 160, "g": 140, "b": 110 }
+    },
+    "u_starDensity": {
+        "label": "Star Density",
+        "value": 50.0,
+        "min": 20.0, "max": 80.0, "step": 1.0
+    },
+    "u_starBrightness": {
+        "label": "Star Brightness",
+        "value": 1.0,
+        "min": 0.0, "max": 3.0, "step": 0.05
+    },
+    "u_starSize": {
+        "label": "Star Size",
+        "value": 1.0,
+        "min": 0.1, "max": 3.0, "step": 0.1
+    },
+    "u_nightBlend": {
+        "label": "Night Blend (auto)",
+        "value": 0.0,
+        "min": 0.0, "max": 1.0, "step": 0.01
+    }
+}

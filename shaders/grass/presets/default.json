@@ -1,0 +1,8 @@
+{
+    "u_bladeHeight":   80.0,
+    "u_windStr":       12.0,
+    "u_fieldSize":     600.0,
+    "u_influenceMult": 1.8,
+    "u_pftResolution": 256.0,
+    "u_numColliders":  0
+}
