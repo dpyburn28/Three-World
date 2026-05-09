@@ -25,7 +25,9 @@ window.SceneEntities = class SceneEntities {
     }
 
     preFrame(ctx) {
+        for (const sys of Object.values(this.systems)) sys.preFrame(ctx);
         for (const obj of this.objects) obj.preFrame(ctx);
+        // effects run via composer pass — intentionally excluded
     }
 
     draw(ctx) {
@@ -33,23 +35,26 @@ window.SceneEntities = class SceneEntities {
     }
 
     collectParams() {
-        const params = {};
-        for (const [name, sys] of Object.entries(this.systems)) {
-            params[name] = sys.collectParams();
-        }
-        return params;
+        return {
+            systems: Object.fromEntries(Object.entries(this.systems).map(([k, s]) => [k, s.collectParams()])),
+            objects: Object.fromEntries(this.objects.map(o => [o.name, o.collectParams()])),
+            effects: Object.fromEntries(this.effects.map(f => [f.name, f.collectParams()])),
+        };
     }
 
     applyParams(data) {
-        for (const [name, sys] of Object.entries(this.systems)) {
-            if (data[name]) sys.applyParams(data[name]);
-        }
+        for (const [name, sys] of Object.entries(this.systems))
+            if (data.systems?.[name]) sys.applyParams(data.systems[name]);
+        for (const obj of this.objects)
+            if (data.objects?.[obj.name]) obj.applyParams(data.objects[obj.name]);
+        for (const fx of this.effects)
+            if (data.effects?.[fx.name]) fx.applyParams(data.effects[fx.name]);
     }
 
     dispose(ctx) {
-        for (const sys of Object.values(this.systems)) sys.dispose();
-        for (const fx of this.effects) fx.destroy(ctx);
+        for (const sys of Object.values(this.systems)) sys.destroy(ctx);
         for (const obj of this.objects) obj.destroy(ctx);
+        for (const fx of this.effects) fx.destroy(ctx);
         this.systems = {};
         this.objects.length = 0;
         this.effects.length = 0;

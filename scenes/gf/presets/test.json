@@ -1,5 +1,5 @@
 {
-    "scene": {
+    "systems": {
         "camera": {
             "height": 239,
             "distance": 686

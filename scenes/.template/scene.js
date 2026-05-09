@@ -4,9 +4,7 @@ SceneRegistry['template'] = () => ({
 
     async load(ctx, folder) {
         this._ctx = ctx;
-        this.entities    = new SceneEntities();
-        this.objects     = this.entities.objects;
-        this.postEffects = this.entities.effects;
+        this.entities = new SceneEntities();
 
         // --- Scene setup ---
         ctx.scene.background = new THREE.Color(0x000000);

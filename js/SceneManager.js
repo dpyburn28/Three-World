@@ -66,30 +66,23 @@ window.SceneManager = class SceneManager {
         console.log('[SceneSelector] 1. starting _buildSceneSelector')
         try {
             const res = await fetch('scenes/index.json')
-            console.log('[SceneSelector] 2. fetch status:', res.status, res.ok)
             const scenes = await res.json()
-            console.log('[SceneSelector] 3. parsed scenes:', scenes)
 
             const options = {}
             for (const name of scenes) options[name] = name
-            console.log('[SceneSelector] 4. options:', options)
 
             this._sceneSelect.scene = this.activeName || scenes[0]
-            console.log('[SceneSelector] 5. initial value:', this._sceneSelect.scene)
-            console.log('[SceneSelector] 6. folder exists:', !!folder, 'folder disposed:', folder?.element?.parentNode === null)
 
             this._sceneBlade = folder.addBinding(this._sceneSelect, 'scene', {
                 label: 'scene',
                 options,
             })
-            console.log('[SceneSelector] 7. blade created:', !!this._sceneBlade)
 
             this._sceneBlade.on('change', (ev) => {
                 if (ev.value !== this.activeName) {
                     this.create(ev.value)
                 }
             })
-            console.log('[SceneSelector] 8. done')
         } catch (e) {
             console.error('[SceneSelector] FAILED:', e)
         }
@@ -266,11 +259,4 @@ window.SceneManager = class SceneManager {
     }
 }
 
-function getPresets() {
-
-}
-
-function parsePreset() {
-
-}
 

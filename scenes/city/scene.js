@@ -4,9 +4,7 @@ SceneRegistry['city'] = () => ({
 
     async load(ctx, folder) {
         this._ctx = ctx;
-        this.entities    = new SceneEntities();
-        this.objects     = this.entities.objects;
-        this.postEffects = this.entities.effects;
+        this.entities = new SceneEntities();
 
         // Background
         ctx.scene.background = new THREE.Color(0x87CEEB);

@@ -18,8 +18,8 @@ window.CityLayout = class CityLayout extends SystemHandle {
         this._onChange = null;  // set by scene to trigger city rebuild
     }
 
-    _buildGui() {
-        const f = this._folder;
+    setupGui(folder, ctx) {
+        const f = folder;
         const change = () => { if (this._onChange) this._onChange(); };
 
         const grid = f.addFolder({ title: 'Grid', expanded: true });

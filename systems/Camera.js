@@ -57,8 +57,8 @@ window.CameraSystem = class CameraSystem extends SystemHandle {
         if (this._params.orbit) this._setOrbitEnabled(true);
     }
 
-    _buildGui() {
-        const f = this._folder;
+    setupGui(folder, ctx) {
+        const f = folder;
 
         // Orbit toggle at the top
         this._bind(f, 'orbit', { label: 'Orbit Controls' }).on('change', (ev) => {

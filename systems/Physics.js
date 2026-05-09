@@ -163,8 +163,8 @@ window.PhysicsSystem = class PhysicsSystem extends SystemHandle {
 
     // ── GUI ──────────────────────────────────────────────────────────────────
 
-    _buildGui() {
-        const f = this._folder;
+    setupGui(folder, ctx) {
+        const f = folder;
 
         const rope = f.addFolder({ title: 'Rope', expanded: true });
         this._bind(rope, 'ropeLength',      { label: 'Length',     min: 0.5, max: 10,  step: 0.1  });

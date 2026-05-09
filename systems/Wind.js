@@ -203,8 +203,8 @@ window.WindSystem = class WindSystem extends SystemHandle {
 
     // ── Private — GUI ─────────────────────────────────────────────────────────
 
-    _buildGui() {
-        const f = this._folder;
+    setupGui(folder, ctx) {
+        const f = folder;
 
         const base = f.addFolder({ title: 'Base', expanded: true });
         this._bind(base, 'direction',     { label: 'Direction',  min: 0,     max: 360,  step: 1     });

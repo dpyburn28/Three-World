@@ -1,5 +1,5 @@
 {
-    "scene": {
+    "systems": {
         "camera": {
             "height": 29,
             "distance": 428,
@@ -275,7 +275,7 @@
             }
         }
     },
-    "postEffects": {
+    "effects": {
         "Dither": {
             "enabled": true,
             "shader": {

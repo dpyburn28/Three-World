@@ -85,8 +85,8 @@ window.MidiSystem = class MidiSystem extends SystemHandle {
 
     // ── GUI ────────────────────────────────────────────────────────────────
 
-    _buildGui() {
-        const f = this._folder;
+    setupGui(folder, ctx) {
+        const f = folder;
 
         // Connection
         const conn = f.addFolder({ title: 'Connection', expanded: true });

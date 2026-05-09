@@ -4,9 +4,7 @@ SceneRegistry['gf'] = () => ({
 
     async load(ctx, folder) {
         this._ctx = ctx;
-        this.entities    = new SceneEntities();
-        this.objects     = this.entities.objects;
-        this.postEffects = this.entities.effects;
+        this.entities = new SceneEntities();
 
         // ── Camera ──────────────────────────────────────────────────────────
         const camera = this.entities.addSystem('camera', new CameraSystem({
