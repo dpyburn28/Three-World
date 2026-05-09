@@ -33,8 +33,7 @@ window.DitherEffect = class DitherEffect extends PostProcessEffect {
         this._shaderControls = new ShaderControls(
             folder,
             this.shader.controls,
-            this.pass.uniforms,
-            this.shader.dirPath
+            this.pass.uniforms
         );
     }
 

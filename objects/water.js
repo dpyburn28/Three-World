@@ -82,8 +82,7 @@ window.Water = class WaterCaustics extends SceneObject {
         this._shaderControls = new ShaderControls(
             folder,
             this.shader.controls,
-            this.mat.uniforms,
-            this.shader.dirPath
+            this.mat.uniforms
         );
 
         // Manual vec3 controls — not in controls.json since they need xyz pickers

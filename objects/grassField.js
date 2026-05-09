@@ -92,10 +92,9 @@ window.GrassField = class GrassField extends SceneObject {
     setupGui(folder, ctx) {
         // Uniform controls auto-wired from controls.json
         this._shaderControls = new ShaderControls(
-            folder, 
-            this.shader.controls, 
-            this.mat.uniforms,
-            this.shader.dirPath
+            folder,
+            this.shader.controls,
+            this.mat.uniforms
         );
 
         // Intercept u_fieldSize — needs geo rebuild

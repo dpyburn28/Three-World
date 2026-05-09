@@ -55,8 +55,7 @@ window.ShaderHandle = class ShaderHandle {
         this._shaderControls = new ShaderControls(
             folder,
             this.shader.controls,
-            this.mat.uniforms,
-            this.shader.dirPath
+            this.mat.uniforms
         );
     }
 

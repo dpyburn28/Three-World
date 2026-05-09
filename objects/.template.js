@@ -47,8 +47,7 @@ window.MyObject = class MyObject extends SceneObject {
         this._shaderControls = new ShaderControls(
             folder,
             this.shader.controls,
-            this.mat.uniforms,
-            this.shader.dirPath
+            this.mat.uniforms
         );
 
         // --- Intercept any uniforms that need side effects ---

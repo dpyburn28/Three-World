@@ -3,11 +3,10 @@ window.ShaderControls = class ShaderControls {
     // folder   — Tweakpane folder to add bindings into
     // controls — the parsed controls.json object (shader.controls)
     // uniforms — the live uniforms object from the material / pass
-    constructor(folder, controls, uniforms, dirPath) {
+    constructor(folder, controls, uniforms) {
         this.params   = {};
         this.uniforms = uniforms;
         this.bindings = [];
-        this.dirPath  = dirPath || null;
 
         if (!controls) return;
 
@@ -36,13 +35,6 @@ window.ShaderControls = class ShaderControls {
         }
 
         this._controls = controls
-
-        if (this.dirPath) {
-            this._presets = new PresetHandler(folder, this.dirPath, {
-                collect: () => this.collectParams(),
-                apply:   (data) => this.applyParams(data),
-            });
-        }
     }
 
     collectParams() {

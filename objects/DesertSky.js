@@ -5,10 +5,10 @@ window.DesertSky = class DesertSky extends SceneObject {
         this.options = {
             radius:     9000,
             windSystem: null,
-            autoNight:  true,
             sun:        null,
             ...options,
         };
+        this._params.autoNight = options.autoNight !== undefined ? options.autoNight : true;
     }
 
     async load(ctx) {
@@ -21,6 +21,7 @@ window.DesertSky = class DesertSky extends SceneObject {
             side:       THREE.BackSide,
             depthWrite: false,
         });
+        this.registerShader('shader', this.sky);
 
         const geo  = new THREE.SphereGeometry(this.options.radius, 32, 16);
         this.mesh  = new THREE.Mesh(geo, this.sky.mat);
@@ -34,25 +35,18 @@ window.DesertSky = class DesertSky extends SceneObject {
 
     setupGui(folder, ctx) {
         this.sky.setupGui(folder);
-        folder.addBinding(this.options, 'autoNight', { label: 'Auto Night' });
+        const b = folder.addBinding(this._params, 'autoNight', { label: 'Auto Night' });
+        this._bindings.push(b);
     }
 
     preFrame(ctx) {
         this.options.sun?.applyToUniforms(this.sky.mat.uniforms);
 
-        if (this.options.autoNight) {
+        if (this._params.autoNight) {
             const sunY  = this.sky.mat.uniforms.u_sunDir.value.y;
             const night = 1.0 - smoothstep(-0.1, 0.5, sunY);
             this.sky.mat.uniforms.u_nightBlend.value = night;
         }
-    }
-
-    collectParams() {
-        return { shader: this.sky.collectParams() };
-    }
-
-    applyParams(data) {
-        if (data.shader) this.sky.applyParams(data.shader);
     }
 
     dispose(ctx) {

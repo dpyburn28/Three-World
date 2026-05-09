@@ -8,6 +8,7 @@ window.SkyDome = class SkyDome extends SceneObject {
     async load(ctx) {
         this.sky = new ShaderHandle('shaders/sky');
         await this.sky.load({ side: THREE.BackSide, depthWrite: false });
+        this.registerShader('shader', this.sky);
 
         const geo  = new THREE.SphereGeometry(this.options.radius, 32, 16);
         this.mesh  = new THREE.Mesh(geo, this.sky.mat);
@@ -16,8 +17,6 @@ window.SkyDome = class SkyDome extends SceneObject {
     }
 
     setupGui(folder, ctx) { this.sky.setupGui(folder); }
-    collectParams()       { return { shader: this.sky.collectParams() }; }
-    applyParams(data)     { if (data.shader) this.sky.applyParams(data.shader); }
 
     dispose(ctx) {
         this.sky.dispose();

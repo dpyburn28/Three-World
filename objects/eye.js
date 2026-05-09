@@ -74,8 +74,7 @@ window.Eye = class EyeObject extends SceneObject {
         this._shaderControls = new ShaderControls(
             folder,
             this.shader.controls,
-            this.mat.uniforms,
-            this.shader.dirPath
+            this.mat.uniforms
         );
 
         // u_eyeRadius needs a geo rebuild

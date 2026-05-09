@@ -48,8 +48,7 @@ window.MyEffect = class MyEffect extends PostProcessEffect {
         this._shaderControls = new ShaderControls(
             folder,
             this.shader.controls,
-            this.pass.uniforms,
-            this.shader.dirPath
+            this.pass.uniforms
         );
 
         // --- Intercept uniforms with side effects ---

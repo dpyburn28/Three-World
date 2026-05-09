@@ -110,7 +110,7 @@ window.SandParticles = class SandParticles extends SceneObject {
         ];
 
         this._shaderControls = new ShaderControls(
-            folder, this.shader.controls, this.mat.uniforms, this.shader.dirPath
+            folder, this.shader.controls, this.mat.uniforms
         );
     }
 

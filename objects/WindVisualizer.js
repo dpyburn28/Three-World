@@ -68,8 +68,7 @@ window.WindVisualizer = class WindVisualizer extends SceneObject {
         this._shaderControls = new ShaderControls(
             folder,
             this.shader.controls,
-            this.mat.uniforms,
-            this.shader.dirPath
+            this.mat.uniforms
         );
     }
 
